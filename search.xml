@@ -61,4 +61,141 @@
         <tag>单片机</tag>
       </tags>
   </entry>
+  <entry>
+    <title>自学C++_01</title>
+    <url>/2021/07/29/%E8%87%AA%E5%AD%A6C-01/</url>
+    <content><![CDATA[<h1 id="初学C"><a href="#初学C" class="headerlink" title="初学C++"></a>初学C++</h1><p>在学校的课程里，大一曾学过<code>C语言</code>，当时啥啥分不清，天真的以为<code>C</code>就是<code>C++</code>毕竟当时是一点都不了解，后来在深入学习后才明白<code>C</code>和<code>C++</code>是两个东西。</p>
+<p>由于带着<code>C</code>的基础，所以在自学过程中会粗略学习基础，例如输出<code>函数</code>、<code>变量</code>、<code>注释</code>、<code>基本语法</code>。</p>
+<p>当然，我还会着重<code>指针</code>相关的知识，毕竟这才是痛点。</p>
+<span id="more"></span>
+
+<h2 id="输出Hello-World"><a href="#输出Hello-World" class="headerlink" title="输出Hello World"></a>输出Hello World</h2><p>几乎在我学习和了解到的计算机语言里，都是从如何打印Hello World开始的，比如<code>C</code>、<code>Python</code>、<code>JAVA</code>。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Hello World&quot;</span> &lt;&lt; endl;</span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>与<code>C</code>中的<code>printf</code>还是不太一样的。</p>
+<h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h1><p>和<code>C</code>一样，分单行和多行</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//这是单行注释</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">这是多行注释</span></span><br><span class="line"><span class="comment">这是多行注释</span></span><br><span class="line"><span class="comment">这是多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><p>依旧和<code>C</code>一样。</p>
+<p><strong>语法</strong>：<code>数据类型 变量名 = 初始值;</code></p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h1><p>也就是无法修改的变量，C++中有两种。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//宏定义</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> a 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//const修饰的变量</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> a = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h1><table>
+<thead>
+<tr>
+<th align="left"><strong>asm</strong></th>
+<th><strong>do</strong></th>
+<th><strong>if</strong></th>
+<th><strong>return</strong></th>
+<th><strong>typedef</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>auto</strong></td>
+<td><strong>double</strong></td>
+<td><strong>inline</strong></td>
+<td><strong>short</strong></td>
+<td><strong>typeid</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>bool</strong></td>
+<td><strong>dynamic_cast</strong></td>
+<td><strong>int</strong></td>
+<td><strong>signed</strong></td>
+<td><strong>typename</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>break</strong></td>
+<td><strong>else</strong></td>
+<td><strong>long</strong></td>
+<td><strong>sizeof</strong></td>
+<td><strong>union</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>case</strong></td>
+<td><strong>enum</strong></td>
+<td><strong>mutable</strong></td>
+<td><strong>static</strong></td>
+<td><strong>unsigned</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>catch</strong></td>
+<td><strong>explicit</strong></td>
+<td><strong>namespace</strong></td>
+<td><strong>static_cast</strong></td>
+<td><strong>using</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>char</strong></td>
+<td><strong>export</strong></td>
+<td><strong>new</strong></td>
+<td><strong>struct</strong></td>
+<td><strong>virtual</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>class</strong></td>
+<td><strong>extern</strong></td>
+<td><strong>operator</strong></td>
+<td><strong>switch</strong></td>
+<td><strong>void</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>const</strong></td>
+<td><strong>false</strong></td>
+<td><strong>private</strong></td>
+<td><strong>template</strong></td>
+<td><strong>volatile</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>const_cast</strong></td>
+<td><strong>float</strong></td>
+<td><strong>protected</strong></td>
+<td><strong>this</strong></td>
+<td><strong>wchar_t</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>continue</strong></td>
+<td><strong>for</strong></td>
+<td><strong>public</strong></td>
+<td><strong>throw</strong></td>
+<td><strong>while</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>default</strong></td>
+<td><strong>friend</strong></td>
+<td><strong>register</strong></td>
+<td><strong>true</strong></td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><strong>delete</strong></td>
+<td><strong>goto</strong></td>
+<td><strong>reinterpret_cast</strong></td>
+<td><strong>try</strong></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>关键字挺多，希望到时候创建变量别给撞上吧。</p>
+<h1 id="标识符命名规则"><a href="#标识符命名规则" class="headerlink" title="标识符命名规则"></a>标识符命名规则</h1><p>1.不能撞关键字（这个没啥好说的）</p>
+<p>2.只能有<code>字母</code>、<code>数字</code>、<code>下划线</code></p>
+<p>3.在2的基础上，第一个字符不能是<code>数字</code></p>
+<p>4.大小写敏感</p>
+<p>总结：和<code>C</code>一样。</p>
+]]></content>
+      <categories>
+        <category>计算机语言</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+      </tags>
+  </entry>
 </search>
