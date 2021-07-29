@@ -16,6 +16,26 @@
       </categories>
   </entry>
   <entry>
+    <title>发布与编辑</title>
+    <url>/2021/07/28/hello-world/</url>
+    <content><![CDATA[<p>本篇是有关于文章发布相关指令以及部分格式编辑方式的文章。</p>
+<span id="more"></span>
+
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="启动hexo"><a href="#启动hexo" class="headerlink" title="启动hexo"></a>启动hexo</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<h3 id="渲染静态页面"><a href="#渲染静态页面" class="headerlink" title="渲染静态页面"></a>渲染静态页面</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+
+<h3 id="部署网页"><a href="#部署网页" class="headerlink" title="部署网页"></a>部署网页</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<h3 id="清除-渲染-部署"><a href="#清除-渲染-部署" class="headerlink" title="清除+渲染+部署"></a>清除+渲染+部署</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+
+<h2 id="文章格式"><a href="#文章格式" class="headerlink" title="文章格式"></a>文章格式</h2><h3 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% pullquote mindmap mindmap-md %&#125;</span><br><span class="line"><span class="bullet">-</span> 一级标题</span><br><span class="line"><span class="bullet">  -</span> 二级标题</span><br><span class="line"><span class="bullet">  -</span> 二级标题</span><br><span class="line"><span class="bullet">    -</span> 三级标题</span><br><span class="line"><span class="bullet">    -</span> 三级标题</span><br><span class="line"><span class="bullet">    -</span> 三级标题</span><br><span class="line"><span class="bullet">  -</span> 二级标题</span><br><span class="line"><span class="bullet">  -</span> 二级标题</span><br><span class="line">&#123;% endpullquote %&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
     <title>基于ardunio的蓝牙开门装置</title>
     <url>/2021/07/28/%E5%9F%BA%E4%BA%8Eardunio%E7%9A%84%E8%93%9D%E7%89%99%E5%BC%80%E9%97%A8%E8%A3%85%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="蓝牙舵机"><a href="#蓝牙舵机" class="headerlink" title="蓝牙舵机"></a>蓝牙舵机</h1><p>我用这个来开宿舍门的，可惜后面未实装，但在家里试过了可以。</p>
@@ -40,26 +60,6 @@
       <tags>
         <tag>单片机</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>发布与编辑</title>
-    <url>/2021/07/28/hello-world/</url>
-    <content><![CDATA[<p>本篇是有关于文章发布相关指令以及部分格式编辑方式的文章。</p>
-<span id="more"></span>
-
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="启动hexo"><a href="#启动hexo" class="headerlink" title="启动hexo"></a>启动hexo</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<h3 id="渲染静态页面"><a href="#渲染静态页面" class="headerlink" title="渲染静态页面"></a>渲染静态页面</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-
-<h3 id="部署网页"><a href="#部署网页" class="headerlink" title="部署网页"></a>部署网页</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-
-<h3 id="清除-渲染-部署"><a href="#清除-渲染-部署" class="headerlink" title="清除+渲染+部署"></a>清除+渲染+部署</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-
-<h2 id="文章格式"><a href="#文章格式" class="headerlink" title="文章格式"></a>文章格式</h2><h3 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% pullquote mindmap mindmap-md %&#125;</span><br><span class="line"><span class="bullet">-</span> 一级标题</span><br><span class="line"><span class="bullet">  -</span> 二级标题</span><br><span class="line"><span class="bullet">  -</span> 二级标题</span><br><span class="line"><span class="bullet">    -</span> 三级标题</span><br><span class="line"><span class="bullet">    -</span> 三级标题</span><br><span class="line"><span class="bullet">    -</span> 三级标题</span><br><span class="line"><span class="bullet">  -</span> 二级标题</span><br><span class="line"><span class="bullet">  -</span> 二级标题</span><br><span class="line">&#123;% endpullquote %&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
   </entry>
   <entry>
     <title>自学C++_01</title>
@@ -199,9 +199,9 @@
       </tags>
   </entry>
   <entry>
-    <title>first_move</title>
+    <title>访问博客速度问题</title>
     <url>/2021/07/27/%E8%AE%BF%E9%97%AE%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="托管于Github的静态网页访问"><a href="#托管于Github的静态网页访问" class="headerlink" title="托管于Github的静态网页访问"></a>托管于Github的静态网页访问</h1><p>大学狗由于缺乏资金，无法长期购置服务器以及域名，所以才使用Github+hexo搭建个人博客，但是Github在国内似乎被墙了，大多数地区访问缓慢甚至无法访问。目前我在想办法，看看能否用别的方法代理网页，大概要money吧，白嫖应该是不可能了。</p>
+    <content><![CDATA[<h1 id="托管于Github的静态网页访问缓慢"><a href="#托管于Github的静态网页访问缓慢" class="headerlink" title="托管于Github的静态网页访问缓慢"></a>托管于Github的静态网页访问缓慢</h1><p>大学狗由于缺乏资金，无法长期购置服务器以及域名，所以才使用Github+hexo搭建个人博客，但是Github在国内似乎被墙了，大多数地区访问缓慢甚至无法访问。目前我在想办法，看看能否用别的方法代理网页，大概要money吧，白嫖应该是不可能了。</p>
 <span id="more"></span>
 
 <p>祝我好运！</p>
