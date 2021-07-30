@@ -36,32 +36,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>基于ardunio的蓝牙开门装置</title>
-    <url>/2021/07/28/%E5%9F%BA%E4%BA%8Eardunio%E7%9A%84%E8%93%9D%E7%89%99%E5%BC%80%E9%97%A8%E8%A3%85%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="蓝牙舵机"><a href="#蓝牙舵机" class="headerlink" title="蓝牙舵机"></a>蓝牙舵机</h1><p>我用这个来开宿舍门的，可惜后面未实装，但在家里试过了可以。</p>
-<p>其实装置本身很简单，总共三个模块 。</p>
-<p>分别是<code>Ardunio</code>、<code>HC-05</code>、<code>舵机</code>，都是上淘宝买的，加加起来差不多50左右。</p>
-<p>对了设备之间连接的杜邦线之类的也别忘了。</p>
-<span id="more"></span>
-
-<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>其实整个装置的原理非常简单，就是通过设备向蓝牙模块<code>HC-05</code>发送特定的字符，然后蓝牙模块将受到的字符传输给上位机，也就是<code>Ardunio</code>，然后经过一段很简单的if判断是否为正确字符后就可以向舵机发送指定电平让舵机转动从而带动某样东西。</p>
-<p>理论上这个装置不仅仅是开门，有很多地方都可以用到，只要传动装置的力够，我买的舵机只有10N，差不多可以拉动一公斤的东西。</p>
-<p>哦对了，如果真实装最好考虑一下电源，用电池或者小充电宝啥的，值得注意的是现在的充电宝都有放电检测，<code>Ardunio</code>的耗电太小可能不在检测范围内导致充电宝断电，非常难受。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;SoftwareSerial.h&gt;</span>          <span class="comment">//库文件</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Servo.h&gt;</span>  </span></span><br><span class="line"></span><br><span class="line">Servo myservo;  </span><br><span class="line"><span class="function">SoftwareSerial <span class="title">BT</span><span class="params">(<span class="number">8</span>, <span class="number">9</span>)</span></span>;           <span class="comment">//设置蓝牙与板子的连接端口。  pin 8  接蓝牙的 TXD    pin 9 接蓝牙的 RXD</span></span><br><span class="line"><span class="keyword">char</span> X;                              <span class="comment">//定义一个变量存数据。</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  Serial.begin(<span class="number">9600</span>);              <span class="comment">//串口监视器通信速率，38400</span></span><br><span class="line">  Serial.println(<span class="string">&quot;蓝牙连接正常&quot;</span>);     <span class="comment">//串口监视器显示蓝牙正常状态</span></span><br><span class="line">  myservo.attach(<span class="number">10</span>);  <span class="comment">// 将引脚10上的舵机与声明的舵机对象连接起来</span></span><br><span class="line">  BT.begin(<span class="number">9600</span>);                  <span class="comment">//蓝牙通信速率，默认一般为 38400</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span>                         <span class="comment">//大循环，执行。</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (Serial.available())           <span class="comment">//检测：【串口】如果数据写入，则执行。</span></span><br><span class="line">  &#123;</span><br><span class="line">    X = Serial.read();              <span class="comment">//把写入的数据给到自定义变量  X</span></span><br><span class="line">    BT.print(X);                    <span class="comment">//把数据给蓝牙</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (BT.available())               <span class="comment">//检测：【蓝牙】如果数据写入，则执行。</span></span><br><span class="line">  &#123;</span><br><span class="line">    X = BT.read();                  <span class="comment">//把检测到的数据给到自定义变量 X</span></span><br><span class="line">    Serial.print(X);                <span class="comment">//把从蓝牙得到的数据显示到串口监视器</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span>(X==<span class="string">&#x27;O&#x27;</span>)</span><br><span class="line">  &#123;</span><br><span class="line">    Serial.println(<span class="string">&quot;检测到开锁信号，正在开锁&quot;</span>);</span><br><span class="line">    myservo.write(<span class="number">180</span>);            </span><br><span class="line">    delay(<span class="number">8000</span>);</span><br><span class="line">    X=<span class="string">&#x27;L&#x27;</span>; </span><br><span class="line">    Serial.println(<span class="string">&quot;开锁时间结束&quot;</span>);  </span><br><span class="line">    delay(<span class="number">100</span>); </span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span>(X!=<span class="string">&#x27;O&#x27;</span>)</span><br><span class="line">  &#123; </span><br><span class="line">    myservo.write(<span class="number">0</span>); </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="代码解析"><a href="#代码解析" class="headerlink" title="代码解析"></a>代码解析</h3><p>上面的代码并未有什么很难的地方，就是一个基本框架。可以在里面添加很多东西，比如 <code>myservo.write(180);</code>这里是舵机的转动角度，理论上配合合适的时延和不同的转动角度可以办到一些更加精细的活。</p>
-<p>还可以在<code>if</code>里添加<code>else</code>做到更多的判定。总的来说这就是个框架，补一补还是能在很多地方的。我懒，就算了，开个门得了。😂</p>
-]]></content>
-      <categories>
-        <category>ardunio</category>
-      </categories>
-      <tags>
-        <tag>单片机</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>自学C++_01</title>
     <url>/2021/07/29/%E8%87%AA%E5%AD%A6C-01/</url>
     <content><![CDATA[<h1 id="初学C"><a href="#初学C" class="headerlink" title="初学C++"></a>初学C++</h1><p>在学校的课程里，大一曾学过<code>C语言</code>，当时啥啥分不清，天真的以为<code>C</code>就是<code>C++</code>毕竟当时是一点都不了解，后来在深入学习后才明白<code>C</code>和<code>C++</code>是两个东西。</p>
@@ -196,6 +170,32 @@
       </categories>
       <tags>
         <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于ardunio的蓝牙开门装置</title>
+    <url>/2021/07/28/%E5%9F%BA%E4%BA%8Eardunio%E7%9A%84%E8%93%9D%E7%89%99%E5%BC%80%E9%97%A8%E8%A3%85%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="蓝牙舵机"><a href="#蓝牙舵机" class="headerlink" title="蓝牙舵机"></a>蓝牙舵机</h1><p>我用这个来开宿舍门的，可惜后面未实装，但在家里试过了可以。</p>
+<p>其实装置本身很简单，总共三个模块 。</p>
+<p>分别是<code>Ardunio</code>、<code>HC-05</code>、<code>舵机</code>，都是上淘宝买的，加加起来差不多50左右。</p>
+<p>对了设备之间连接的杜邦线之类的也别忘了。</p>
+<span id="more"></span>
+
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>其实整个装置的原理非常简单，就是通过设备向蓝牙模块<code>HC-05</code>发送特定的字符，然后蓝牙模块将受到的字符传输给上位机，也就是<code>Ardunio</code>，然后经过一段很简单的if判断是否为正确字符后就可以向舵机发送指定电平让舵机转动从而带动某样东西。</p>
+<p>理论上这个装置不仅仅是开门，有很多地方都可以用到，只要传动装置的力够，我买的舵机只有10N，差不多可以拉动一公斤的东西。</p>
+<p>哦对了，如果真实装最好考虑一下电源，用电池或者小充电宝啥的，值得注意的是现在的充电宝都有放电检测，<code>Ardunio</code>的耗电太小可能不在检测范围内导致充电宝断电，非常难受。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;SoftwareSerial.h&gt;</span>          <span class="comment">//库文件</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Servo.h&gt;</span>  </span></span><br><span class="line"></span><br><span class="line">Servo myservo;  </span><br><span class="line"><span class="function">SoftwareSerial <span class="title">BT</span><span class="params">(<span class="number">8</span>, <span class="number">9</span>)</span></span>;           <span class="comment">//设置蓝牙与板子的连接端口。  pin 8  接蓝牙的 TXD    pin 9 接蓝牙的 RXD</span></span><br><span class="line"><span class="keyword">char</span> X;                              <span class="comment">//定义一个变量存数据。</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  Serial.begin(<span class="number">9600</span>);              <span class="comment">//串口监视器通信速率，38400</span></span><br><span class="line">  Serial.println(<span class="string">&quot;蓝牙连接正常&quot;</span>);     <span class="comment">//串口监视器显示蓝牙正常状态</span></span><br><span class="line">  myservo.attach(<span class="number">10</span>);  <span class="comment">// 将引脚10上的舵机与声明的舵机对象连接起来</span></span><br><span class="line">  BT.begin(<span class="number">9600</span>);                  <span class="comment">//蓝牙通信速率，默认一般为 38400</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span>                         <span class="comment">//大循环，执行。</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (Serial.available())           <span class="comment">//检测：【串口】如果数据写入，则执行。</span></span><br><span class="line">  &#123;</span><br><span class="line">    X = Serial.read();              <span class="comment">//把写入的数据给到自定义变量  X</span></span><br><span class="line">    BT.print(X);                    <span class="comment">//把数据给蓝牙</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (BT.available())               <span class="comment">//检测：【蓝牙】如果数据写入，则执行。</span></span><br><span class="line">  &#123;</span><br><span class="line">    X = BT.read();                  <span class="comment">//把检测到的数据给到自定义变量 X</span></span><br><span class="line">    Serial.print(X);                <span class="comment">//把从蓝牙得到的数据显示到串口监视器</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span>(X==<span class="string">&#x27;O&#x27;</span>)</span><br><span class="line">  &#123;</span><br><span class="line">    Serial.println(<span class="string">&quot;检测到开锁信号，正在开锁&quot;</span>);</span><br><span class="line">    myservo.write(<span class="number">180</span>);            </span><br><span class="line">    delay(<span class="number">8000</span>);</span><br><span class="line">    X=<span class="string">&#x27;L&#x27;</span>; </span><br><span class="line">    Serial.println(<span class="string">&quot;开锁时间结束&quot;</span>);  </span><br><span class="line">    delay(<span class="number">100</span>); </span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span>(X!=<span class="string">&#x27;O&#x27;</span>)</span><br><span class="line">  &#123; </span><br><span class="line">    myservo.write(<span class="number">0</span>); </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="代码解析"><a href="#代码解析" class="headerlink" title="代码解析"></a>代码解析</h3><p>上面的代码并未有什么很难的地方，就是一个基本框架。可以在里面添加很多东西，比如 <code>myservo.write(180);</code>这里是舵机的转动角度，理论上配合合适的时延和不同的转动角度可以办到一些更加精细的活。</p>
+<p>还可以在<code>if</code>里添加<code>else</code>做到更多的判定。总的来说这就是个框架，补一补还是能在很多地方的。我懒，就算了，开个门得了。😂</p>
+]]></content>
+      <categories>
+        <category>ardunio</category>
+      </categories>
+      <tags>
+        <tag>单片机</tag>
       </tags>
   </entry>
   <entry>
