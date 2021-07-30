@@ -32,25 +32,6 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
-    <title>加密测试</title>
-    <url>/2021/07/30/%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="9d177eea1ffce44bf4a58873a39eee9cd8d45a004f32272d62ed362519747208">165d50f05814027fb7fe5e4ae8a088d85e75c61d48a21fe4f92c66618cda8718aded696b6d7976ed7665f2fd4f349bf2f624708d3a6f73318e6b9fe92f2e9ba753a4e70a9524add18a09baee09a1409f09e1b7c6fadd8d57ca48e619fa97df018213bb127f7b99b6dc4b9202e2fffcb3e0427c398af58b5b81a9c7f46ee2ec352e64217470d45b88521e07918191614585ea8ca6f5c2f9cb635793882c93eece438f491ac5cf04418382d7961b7dbe25ae23b32eef2d62f6722316dcc22298c7a48c7bea9198dc8a8cc6535a6b8167a169483e91f1804591b14f6538635893c1e9666688724bbe4e2785b2db7d8367e9be8122a410872e99fd21eb9be80b433ef87fee77b86917da04b181be09d5ee34b47e761b95e978ac09db683514f343e4e5a06bd4ec34bd5e3c38c8533063c19d9aa6611deb7ccfa62353b14670d375f0</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>告示</category>
-      </categories>
-  </entry>
-  <entry>
     <title>基于ardunio的蓝牙开门装置</title>
     <url>/2021/07/28/%E5%9F%BA%E4%BA%8Eardunio%E7%9A%84%E8%93%9D%E7%89%99%E5%BC%80%E9%97%A8%E8%A3%85%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="蓝牙舵机"><a href="#蓝牙舵机" class="headerlink" title="蓝牙舵机"></a>蓝牙舵机</h1><p>我用这个来开宿舍门的，可惜后面未实装，但在家里试过了可以。</p>
@@ -75,6 +56,61 @@
       <tags>
         <tag>单片机</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>加密测试</title>
+    <url>/2021/07/30/%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="9d177eea1ffce44bf4a58873a39eee9cd8d45a004f32272d62ed362519747208">165d50f05814027fb7fe5e4ae8a088d85e75c61d48a21fe4f92c66618cda8718aded696b6d7976ed7665f2fd4f349bf2f624708d3a6f73318e6b9fe92f2e9ba753a4e70a9524add18a09baee09a1409f09e1b7c6fadd8d57ca48e619fa97df018213bb127f7b99b6dc4b9202e2fffcb3e0427c398af58b5b81a9c7f46ee2ec352e64217470d45b88521e07918191614585ea8ca6f5c2f9cb635793882c93eece438f491ac5cf04418382d7961b7dbe25ae23b32eef2d62f6722316dcc22298c7a48c7bea9198dc8a8cc6535a6b8167a169483e91f1804591b14f6538635893c1e9666688724bbe4e2785b2db7d8367e9be8122a410872e99fd21eb9be80b433ef87fee77b86917da04b181be09d5ee34b47e761b95e978ac09db683514f343e4e5a06bd4ec34bd5e3c38c8533063c19d9aa6611deb7ccfa62353b14670d375f0</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>告示</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>访问博客速度问题</title>
+    <url>/2021/07/27/%E8%AE%BF%E9%97%AE%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="托管于Github的静态网页访问缓慢"><a href="#托管于Github的静态网页访问缓慢" class="headerlink" title="托管于Github的静态网页访问缓慢"></a>托管于Github的静态网页访问缓慢</h1><p>大学狗由于缺乏资金，无法长期购置服务器以及域名，所以才使用Github+hexo搭建个人博客，但是Github在国内似乎被墙了，大多数地区访问缓慢甚至无法访问。目前我在想办法，看看能否用别的方法代理网页，大概要money吧，白嫖应该是不可能了。</p>
+<p>2021/07/30 <a href="https://wbsy.netlify.app/">添加新访问地址</a></p>
+<span id="more"></span>
+
+<p>祝我好运！</p>
+
+
+<ul>
+<li><p><img src="https://z3.ax1x.com/2021/07/29/Wqfkfe.jpg" alt="image"></p>
+</li>
+<li><p>看起来不太妙啊，后续我考虑考虑买不买域名吧，主要是长期维护的话是一笔不菲的费用。而且这个博客大概也就我自己看看吧。毕竟github屏蔽了百度的爬虫，在国内应该大部分人用的还是百度之类的吧，Google用的人还是少。</p>
+</li>
+</ul>
+<ul>
+<li><p>更新 2021/07/30</p>
+</li>
+<li><p>利用netlify加速解析，国内算是能用了吧。</p>
+</li>
+</ul>
+<ul>
+<li><p>目前站点有两个域名</p>
+</li>
+<li><p><a href="https://287857652.github.io/">287857652.github.io</a></p>
+</li>
+<li><p><a href="https://wbsy.netlify.app/">wbsy.netlify.app</a></p>
+</li>
+</ul>
+<p>虽然第二个域名挺丑的，但是能用就好，以后考虑绑定自己买的域名吧。</p>
+]]></content>
+      <categories>
+        <category>告示</category>
+      </categories>
   </entry>
   <entry>
     <title>自学C++_01</title>
@@ -212,41 +248,5 @@
       <tags>
         <tag>C++</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>访问博客速度问题</title>
-    <url>/2021/07/27/%E8%AE%BF%E9%97%AE%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="托管于Github的静态网页访问缓慢"><a href="#托管于Github的静态网页访问缓慢" class="headerlink" title="托管于Github的静态网页访问缓慢"></a>托管于Github的静态网页访问缓慢</h1><p>大学狗由于缺乏资金，无法长期购置服务器以及域名，所以才使用Github+hexo搭建个人博客，但是Github在国内似乎被墙了，大多数地区访问缓慢甚至无法访问。目前我在想办法，看看能否用别的方法代理网页，大概要money吧，白嫖应该是不可能了。</p>
-<p>2021/07/30 <a href="wbsy.netlify.app">添加新访问地址</a></p>
-<span id="more"></span>
-
-<p>祝我好运！</p>
-
-
-<ul>
-<li><p><img src="https://z3.ax1x.com/2021/07/29/Wqfkfe.jpg" alt="image"></p>
-</li>
-<li><p>看起来不太妙啊，后续我考虑考虑买不买域名吧，主要是长期维护的话是一笔不菲的费用。而且这个博客大概也就我自己看看吧。毕竟github屏蔽了百度的爬虫，在国内应该大部分人用的还是百度之类的吧，Google用的人还是少。</p>
-</li>
-</ul>
-<ul>
-<li><p>更新 2021/07/30</p>
-</li>
-<li><p>利用netlify加速解析，国内算是能用了吧。</p>
-</li>
-</ul>
-<ul>
-<li><p>目前站点有两个域名</p>
-</li>
-<li><p><a href="287857652.github.io">287857652.github.io</a></p>
-</li>
-<li><p><a href="wbsy.netlify.app">wbsy.netlify.app</a></p>
-</li>
-</ul>
-<p>虽然第二个域名挺丑的，但是能用就好，以后考虑绑定自己买的域名吧。</p>
-]]></content>
-      <categories>
-        <category>告示</category>
-      </categories>
   </entry>
 </search>
