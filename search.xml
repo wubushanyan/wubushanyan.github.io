@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>first_move</title>
-    <url>/2021/07/27/first-move/</url>
-    <content><![CDATA[<h1 id="这是这个静态Blog的第一篇文章"><a href="#这是这个静态Blog的第一篇文章" class="headerlink" title="这是这个静态Blog的第一篇文章"></a>这是这个静态Blog的第一篇文章</h1><p>由于之前的服务器没续费导致之前用wordpress写的好多文章都没了，不过我在尝试找回。</p>
-<p>这个Blog的意义在于我想将之后我学到的东西尽力的记录在这里，以备后续回忆。</p>
-<span id="more"></span>
-
-<p>祝我好运！</p>
-<img src="/2021/07/27/first-move/1.png" class="" title="图片1">
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>告示</category>
-      </categories>
-  </entry>
-  <entry>
     <title>发布与编辑</title>
     <url>/2021/07/27/hello-world/</url>
     <content><![CDATA[<p>本篇是有关于文章发布相关指令以及部分格式编辑方式的文章。</p>
@@ -36,6 +21,40 @@
 
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>告示</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>first_move</title>
+    <url>/2021/07/27/first-move/</url>
+    <content><![CDATA[<h1 id="这是这个静态Blog的第一篇文章"><a href="#这是这个静态Blog的第一篇文章" class="headerlink" title="这是这个静态Blog的第一篇文章"></a>这是这个静态Blog的第一篇文章</h1><p>由于之前的服务器没续费导致之前用wordpress写的好多文章都没了，不过我在尝试找回。</p>
+<p>这个Blog的意义在于我想将之后我学到的东西尽力的记录在这里，以备后续回忆。</p>
+<span id="more"></span>
+
+<p>祝我好运！</p>
+<img src="/2021/07/27/first-move/1.png" class="" title="图片1">
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>告示</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>加密测试</title>
+    <url>/2021/07/30/%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="8bf64fc329aab110beb4bf711c1216c2d915bba8166607c381fc59afc064e041">165d50f05814027fb7fe5e4ae8a088d85e75c61d48a21fe4f92c66618cda8718aded696b6d7976ed7665f2fd4f349bf2f624708d3a6f73318e6b9fe92f2e9ba753a4e70a9524add18a09baee09a1409f09e1b7c6fadd8d57ca48e619fa97df018213bb127f7b99b6dc4b9202e2fffcb3e0427c398af58b5b81a9c7f46ee2ec352e64217470d45b88521e07918191614585ea8ca6f5c2f9cb635793882c93eece438f491ac5cf04418382d7961b7dbe25ae23b32eef2d62f6722316dcc22298c7a48c7bea9198dc8a8cc6535a6b8167a169483e91f1804591b14f6538635893c1e9666688724bbe4e2785b2db7d8367e9be8122a410872e99fd21eb9be80b433ef87fee77b86917da04b181be09d5ee34b47e761b95e978ac09db683514f343e4e5a06bd4ec34bd5e3c38c8533063c19dca1542351f12a2a5e67b0075de63f41a4563d1af77d22b70b9a60912bc9422ab82845fc99bcba6c6cf66481b3eb147e0f4544d201092e6fac19f768ae70351a2ea52e39ecf55fbd7b082e2b56a0f602f667bc5366327e21e902d92c83d5d0095d08fbed6014f4e2f805f5c12339d54fb06ef3af7503d6d08a898592c0131887ce4923fa62b4a2462f4658ec7049059fec52cc1df4e2e2853dcebdbeb4c317d28b7bc0809d762abb1d6030a7c03a34357137ca155e7bafdebf583d0f7c4c644f6e04d04f174e4d416087e51ad3b5416583f868311be4d59e07d04dfd35b72e06c7eef190eaf52567af7c81053f0d1d405e5a5acd6e294ccb6d5952e909010c225b1a8c4d45f1ada98341dcc898d31b154c8c968ffb8230a4967c2496e414fada509c3d09477b51eba318634abfe4bad424aef50182f15283df99ceb80c3434b021a9d5d060f6a9a670593d2c97b73440ec74722a4293737f3bda8d9635845e44837d2e312f765006a432c7e3d24578d65e908b3d6eefd1c4bbc0d7b9c0857e98dd73e2b43a715bcea637210fe855f37bf68b0faad880e2be5bf035723f1b60633942358a2d2d9137d5727ba1631f65258f0092944513542bdd41ad915c3b760549c8072502c3f9263291c5aa7dae57e1ac9d0f37f3ce38b19aded05fcf49e8c79f2e3de7256e2cec777e9f8eb6ad53595</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>告示</category>
       </categories>
@@ -65,83 +84,6 @@
       <tags>
         <tag>单片机</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>加密测试</title>
-    <url>/2021/07/30/%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="8bf64fc329aab110beb4bf711c1216c2d915bba8166607c381fc59afc064e041">165d50f05814027fb7fe5e4ae8a088d85e75c61d48a21fe4f92c66618cda8718aded696b6d7976ed7665f2fd4f349bf2f624708d3a6f73318e6b9fe92f2e9ba753a4e70a9524add18a09baee09a1409f09e1b7c6fadd8d57ca48e619fa97df018213bb127f7b99b6dc4b9202e2fffcb3e0427c398af58b5b81a9c7f46ee2ec352e64217470d45b88521e07918191614585ea8ca6f5c2f9cb635793882c93eece438f491ac5cf04418382d7961b7dbe25ae23b32eef2d62f6722316dcc22298c7a48c7bea9198dc8a8cc6535a6b8167a169483e91f1804591b14f6538635893c1e9666688724bbe4e2785b2db7d8367e9be8122a410872e99fd21eb9be80b433ef87fee77b86917da04b181be09d5ee34b47e761b95e978ac09db683514f343e4e5a06bd4ec34bd5e3c38c8533063c19dca1542351f12a2a5e67b0075de63f41a4563d1af77d22b70b9a60912bc9422ab82845fc99bcba6c6cf66481b3eb147e0f4544d201092e6fac19f768ae70351a2ea52e39ecf55fbd7b082e2b56a0f602f667bc5366327e21e902d92c83d5d0095d08fbed6014f4e2f805f5c12339d54fb06ef3af7503d6d08a898592c0131887ce4923fa62b4a2462f4658ec7049059fec52cc1df4e2e2853dcebdbeb4c317d28b7bc0809d762abb1d6030a7c03a34357137ca155e7bafdebf583d0f7c4c644f6e04d04f174e4d416087e51ad3b5416583f868311be4d59e07d04dfd35b72e06c7eef190eaf52567af7c81053f0d1d405e5a5acd6e294ccb6d5952e909010c225b1a8c4d45f1ada98341dcc898d31b154c8c968ffb8230a4967c2496e414fada509c3d09477b51eba318634abfe4bad424aef50182f15283df99ceb80c3434b021a9d5d060f6a9a670593d2c97b73440ec74722a4293737f3bda8d9635845e44837d2e312f765006a432c7e3d24578d65e908b3d6eefd1c4bbc0d7b9c0857e98dd73e2b43a715bcea637210fe855f37bf68b0faad880e2be5bf035723f1b60633942358a2d2d9137d5727ba1631f65258f0092944513542bdd41ad915c3b760549c8072502c3f9263291c5aa7dae57e1ac9d0f37f3ce38b19aded05fcf49e8c79f2e3de7256e2cec777e9f8eb6ad53595</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>告示</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>思维导图测试</title>
-    <url>/2021/07/30/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<blockquote class="pullquote mindmap mindmap-md"><ul>
-<li><a href="">Hexo 的思维导图插件</a><ul>
-<li>前言</li>
-<li>使用方法<ul>
-<li>一</li>
-<li>二</li>
-<li>三</li>
-</ul>
-</li>
-<li>太长不看</li>
-<li>参考资料</li>
-</ul>
-</li>
-</ul>
-</blockquote><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>告示</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>访问博客速度问题</title>
-    <url>/2021/07/27/%E8%AE%BF%E9%97%AE%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="托管于Github的静态网页访问缓慢"><a href="#托管于Github的静态网页访问缓慢" class="headerlink" title="托管于Github的静态网页访问缓慢"></a>托管于Github的静态网页访问缓慢</h1><p>大学狗由于缺乏资金，无法长期购置服务器以及域名，所以才使用Github+hexo搭建个人博客，但是Github在国内似乎被墙了，大多数地区访问缓慢甚至无法访问。目前我在想办法，看看能否用别的方法代理网页，大概要money吧，白嫖应该是不可能了。</p>
-<p>2021/07/30 <a href="https://wbsy.netlify.app/">添加新访问地址</a>这个链接访问国内访问似乎比github.io的快</p>
-<span id="more"></span>
-
-<p>祝我好运！</p>
-
-
-<ul>
-<li><p><img src="https://z3.ax1x.com/2021/07/29/Wqfkfe.jpg" alt="image"></p>
-</li>
-<li><p>看起来不太妙啊，后续我考虑考虑买不买域名吧，主要是长期维护的话是一笔不菲的费用。而且这个博客大概也就我自己看看吧。毕竟github屏蔽了百度的爬虫，在国内应该大部分人用的还是百度之类的吧，Google用的人还是少。</p>
-</li>
-</ul>
-<ul>
-<li><p>更新 2021/07/30</p>
-</li>
-<li><p>利用netlify加速解析，国内算是能用了吧。</p>
-</li>
-</ul>
-<ul>
-<li><p>目前站点有两个域名</p>
-</li>
-<li><p><a href="https://287857652.github.io/">287857652.github.io</a></p>
-</li>
-<li><p><a href="https://wbsy.netlify.app/">wbsy.netlify.app</a></p>
-</li>
-</ul>
-<p>虽然第二个域名挺丑的，但是能用就好，以后考虑绑定自己买的域名吧。</p>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>告示</category>
-      </categories>
   </entry>
   <entry>
     <title>自学C++_01</title>
@@ -279,5 +221,41 @@
       <tags>
         <tag>C++</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>访问博客速度问题</title>
+    <url>/2021/07/27/%E8%AE%BF%E9%97%AE%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="托管于Github的静态网页访问缓慢"><a href="#托管于Github的静态网页访问缓慢" class="headerlink" title="托管于Github的静态网页访问缓慢"></a>托管于Github的静态网页访问缓慢</h1><p>大学狗由于缺乏资金，无法长期购置服务器以及域名，所以才使用Github+hexo搭建个人博客，但是Github在国内似乎被墙了，大多数地区访问缓慢甚至无法访问。目前我在想办法，看看能否用别的方法代理网页，大概要money吧，白嫖应该是不可能了。</p>
+<p>2021/07/30 <a href="https://wbsy.netlify.app/">添加新访问地址</a>这个链接访问国内访问似乎比github.io的快</p>
+<span id="more"></span>
+
+<p>祝我好运！</p>
+
+
+<ul>
+<li><p><img src="https://z3.ax1x.com/2021/07/29/Wqfkfe.jpg" alt="image"></p>
+</li>
+<li><p>看起来不太妙啊，后续我考虑考虑买不买域名吧，主要是长期维护的话是一笔不菲的费用。而且这个博客大概也就我自己看看吧。毕竟github屏蔽了百度的爬虫，在国内应该大部分人用的还是百度之类的吧，Google用的人还是少。</p>
+</li>
+</ul>
+<ul>
+<li><p>更新 2021/07/30</p>
+</li>
+<li><p>利用netlify加速解析，国内算是能用了吧。</p>
+</li>
+</ul>
+<ul>
+<li><p>目前站点有两个域名</p>
+</li>
+<li><p><a href="https://287857652.github.io/">287857652.github.io</a></p>
+</li>
+<li><p><a href="https://wbsy.netlify.app/">wbsy.netlify.app</a></p>
+</li>
+</ul>
+<p>虽然第二个域名挺丑的，但是能用就好，以后考虑绑定自己买的域名吧。</p>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>告示</category>
+      </categories>
   </entry>
 </search>
