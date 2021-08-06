@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>first_move</title>
+    <url>/2021/07/27/first-move/</url>
+    <content><![CDATA[<h1 id="这是这个静态Blog的第一篇文章"><a href="#这是这个静态Blog的第一篇文章" class="headerlink" title="这是这个静态Blog的第一篇文章"></a>这是这个静态Blog的第一篇文章</h1><p>由于之前的服务器没续费导致之前用wordpress写的好多文章都没了，不过我在尝试找回。</p>
+<p>这个Blog的意义在于我想将之后我学到的东西尽力的记录在这里，以备后续回忆。</p>
+<span id="more"></span>
+
+<p>祝我好运！</p>
+<img src="/2021/07/27/first-move/1.png" class="" title="图片1">
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>告示</category>
+      </categories>
+  </entry>
+  <entry>
     <title>发布与编辑</title>
     <url>/2021/07/27/hello-world/</url>
     <content><![CDATA[<p>本篇是有关于文章发布相关指令以及部分格式编辑方式的文章。</p>
@@ -19,21 +34,6 @@
 <h2 id="文章格式"><a href="#文章格式" class="headerlink" title="文章格式"></a>文章格式</h2><h3 id="加密"><a href="#加密" class="headerlink" title="加密"></a>加密</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">password: 密码在这里</span><br></pre></td></tr></table></figure>
 
 
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>告示</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>first_move</title>
-    <url>/2021/07/27/first-move/</url>
-    <content><![CDATA[<h1 id="这是这个静态Blog的第一篇文章"><a href="#这是这个静态Blog的第一篇文章" class="headerlink" title="这是这个静态Blog的第一篇文章"></a>这是这个静态Blog的第一篇文章</h1><p>由于之前的服务器没续费导致之前用wordpress写的好多文章都没了，不过我在尝试找回。</p>
-<p>这个Blog的意义在于我想将之后我学到的东西尽力的记录在这里，以备后续回忆。</p>
-<span id="more"></span>
-
-<p>祝我好运！</p>
-<img src="/2021/07/27/first-move/1.png" class="" title="图片1">
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       <categories>
@@ -87,7 +87,7 @@
   </entry>
   <entry>
     <title>自学C++_01</title>
-    <url>/2021/07/29/%E8%87%AA%E5%AD%A6C-01/</url>
+    <url>/2021/07/29/%E8%87%AA%E5%AD%A6C++_01/</url>
     <content><![CDATA[<h1 id="初学C"><a href="#初学C" class="headerlink" title="初学C++"></a>初学C++</h1><p>在学校的课程里，大一曾学过<code>C语言</code>，当时啥啥分不清，天真的以为<code>C</code>就是<code>C++</code>毕竟当时是一点都不了解，后来在深入学习后才明白<code>C</code>和<code>C++</code>是两个东西。</p>
 <p>由于带着<code>C</code>的基础，所以在自学过程中会粗略学习基础，例如输出<code>函数</code>、<code>变量</code>、<code>注释</code>、<code>基本语法</code>。</p>
 <p>当然，我还会着重<code>指针</code>相关的知识，毕竟这才是痛点。</p>
@@ -215,6 +215,511 @@
 <p>4.大小写敏感</p>
 <p>总结：和<code>C</code>一样。</p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>计算机语言</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自学C++_02</title>
+    <url>/2021/08/01/%E8%87%AA%E5%AD%A6C++_02/</url>
+    <content><![CDATA[<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><table>
+<thead>
+<tr>
+<th><strong>数据类型</strong></th>
+<th><strong>占用空间</strong></th>
+<th>取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>short(短整型)</td>
+<td>2字节</td>
+<td>(-2^15 ~ 2^15-1)</td>
+</tr>
+<tr>
+<td>int(整型)</td>
+<td>4字节</td>
+<td>(-2^31 ~ 2^31-1)</td>
+</tr>
+<tr>
+<td>long(长整形)</td>
+<td>Windows为4字节，Linux为4字节(32位)，8字节(64位)</td>
+<td>(-2^31 ~ 2^31-1)</td>
+</tr>
+<tr>
+<td>long long(长长整形)</td>
+<td>8字节</td>
+<td>(-2^63 ~ 2^63-1)</td>
+</tr>
+</tbody></table>
+<p>有了long long格式，没瞅见过。</p>
+<span id="more"></span>
+
+<p>关于如何得到一个变量或者数据类型所占用的空间可以通过<code>sizeof</code>获得。</p>
+<h4 id="sizeof"><a href="#sizeof" class="headerlink" title="sizeof"></a>sizeof</h4><p><strong>语法：</strong> <code>sizeof( 数据类型 / 变量)</code></p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in"><span class="keyword">sizeof</span></span>(<span class="keyword">short</span>)</span><br><span class="line"><span class="built_in"><span class="keyword">sizeof</span></span>(<span class="keyword">long</span>)</span><br><span class="line">   </span><br><span class="line"><span class="keyword">int</span> a=<span class="number">0</span>;</span><br><span class="line"><span class="built_in"><span class="keyword">sizeof</span></span>(a)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h2><p>依旧和C一样有<code>float</code>、<code>double</code></p>
+<table>
+<thead>
+<tr>
+<th><strong>数据类型</strong></th>
+<th><strong>占用空间</strong></th>
+<th><strong>有效数字范围</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>float</td>
+<td>4字节</td>
+<td>7位有效数字</td>
+</tr>
+<tr>
+<td>double</td>
+<td>8字节</td>
+<td>15～16位有效数字</td>
+</tr>
+</tbody></table>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">float</span> f1 = <span class="number">1.23f</span>;</span><br><span class="line"><span class="keyword">double</span> d1 = <span class="number">1.23</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//科学计数法</span></span><br><span class="line"><span class="keyword">float</span> f2 = <span class="number">6e3</span>;     <span class="comment">//相当于6*10^3 </span></span><br></pre></td></tr></table></figure>
+
+<p>这里<code>float</code>后面多了个<code>f</code>是为了声明<code>1.23</code>这是一个<code>float</code>的格式，若没有这个<code>f</code>会默认为双精度，然后转换后由<code>float</code>接收。</p>
+<h2 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">char</span> Ch=<span class="string">&#x27;f&#x27;</span>;</span><br><span class="line">  	<span class="comment">//若要得到f的ASCLL码，强制转换为int即可</span></span><br><span class="line">  	cout &lt;&lt; <span class="built_in"><span class="keyword">int</span></span>(Ch) &lt;&lt;endl;</span><br><span class="line">   </span><br><span class="line">       </span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th><strong>数据类型</strong></th>
+<th><strong>占用空间</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>char</td>
+<td>1字节</td>
+</tr>
+</tbody></table>
+<p>和<code>c</code>一样，实际存储的是ASCLL码</p>
+<h4 id="ASCLL码表"><a href="#ASCLL码表" class="headerlink" title="ASCLL码表"></a>ASCLL码表</h4><p>ASCII码表格：</p>
+<table>
+<thead>
+<tr>
+<th><strong>ASCII</strong>值</th>
+<th><strong>控制字符</strong></th>
+<th><strong>ASCII</strong>值</th>
+<th><strong>字符</strong></th>
+<th><strong>ASCII</strong>值</th>
+<th><strong>字符</strong></th>
+<th><strong>ASCII</strong>值</th>
+<th><strong>字符</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>NUT</td>
+<td>32</td>
+<td>(space)</td>
+<td>64</td>
+<td>@</td>
+<td>96</td>
+<td>、</td>
+</tr>
+<tr>
+<td>1</td>
+<td>SOH</td>
+<td>33</td>
+<td>!</td>
+<td>65</td>
+<td>A</td>
+<td>97</td>
+<td>a</td>
+</tr>
+<tr>
+<td>2</td>
+<td>STX</td>
+<td>34</td>
+<td>“</td>
+<td>66</td>
+<td>B</td>
+<td>98</td>
+<td>b</td>
+</tr>
+<tr>
+<td>3</td>
+<td>ETX</td>
+<td>35</td>
+<td>#</td>
+<td>67</td>
+<td>C</td>
+<td>99</td>
+<td>c</td>
+</tr>
+<tr>
+<td>4</td>
+<td>EOT</td>
+<td>36</td>
+<td>$</td>
+<td>68</td>
+<td>D</td>
+<td>100</td>
+<td>d</td>
+</tr>
+<tr>
+<td>5</td>
+<td>ENQ</td>
+<td>37</td>
+<td>%</td>
+<td>69</td>
+<td>E</td>
+<td>101</td>
+<td>e</td>
+</tr>
+<tr>
+<td>6</td>
+<td>ACK</td>
+<td>38</td>
+<td>&amp;</td>
+<td>70</td>
+<td>F</td>
+<td>102</td>
+<td>f</td>
+</tr>
+<tr>
+<td>7</td>
+<td>BEL</td>
+<td>39</td>
+<td>,</td>
+<td>71</td>
+<td>G</td>
+<td>103</td>
+<td>g</td>
+</tr>
+<tr>
+<td>8</td>
+<td>BS</td>
+<td>40</td>
+<td>(</td>
+<td>72</td>
+<td>H</td>
+<td>104</td>
+<td>h</td>
+</tr>
+<tr>
+<td>9</td>
+<td>HT</td>
+<td>41</td>
+<td>)</td>
+<td>73</td>
+<td>I</td>
+<td>105</td>
+<td>i</td>
+</tr>
+<tr>
+<td>10</td>
+<td>LF</td>
+<td>42</td>
+<td>*</td>
+<td>74</td>
+<td>J</td>
+<td>106</td>
+<td>j</td>
+</tr>
+<tr>
+<td>11</td>
+<td>VT</td>
+<td>43</td>
+<td>+</td>
+<td>75</td>
+<td>K</td>
+<td>107</td>
+<td>k</td>
+</tr>
+<tr>
+<td>12</td>
+<td>FF</td>
+<td>44</td>
+<td>,</td>
+<td>76</td>
+<td>L</td>
+<td>108</td>
+<td>l</td>
+</tr>
+<tr>
+<td>13</td>
+<td>CR</td>
+<td>45</td>
+<td>-</td>
+<td>77</td>
+<td>M</td>
+<td>109</td>
+<td>m</td>
+</tr>
+<tr>
+<td>14</td>
+<td>SO</td>
+<td>46</td>
+<td>.</td>
+<td>78</td>
+<td>N</td>
+<td>110</td>
+<td>n</td>
+</tr>
+<tr>
+<td>15</td>
+<td>SI</td>
+<td>47</td>
+<td>/</td>
+<td>79</td>
+<td>O</td>
+<td>111</td>
+<td>o</td>
+</tr>
+<tr>
+<td>16</td>
+<td>DLE</td>
+<td>48</td>
+<td>0</td>
+<td>80</td>
+<td>P</td>
+<td>112</td>
+<td>p</td>
+</tr>
+<tr>
+<td>17</td>
+<td>DCI</td>
+<td>49</td>
+<td>1</td>
+<td>81</td>
+<td>Q</td>
+<td>113</td>
+<td>q</td>
+</tr>
+<tr>
+<td>18</td>
+<td>DC2</td>
+<td>50</td>
+<td>2</td>
+<td>82</td>
+<td>R</td>
+<td>114</td>
+<td>r</td>
+</tr>
+<tr>
+<td>19</td>
+<td>DC3</td>
+<td>51</td>
+<td>3</td>
+<td>83</td>
+<td>S</td>
+<td>115</td>
+<td>s</td>
+</tr>
+<tr>
+<td>20</td>
+<td>DC4</td>
+<td>52</td>
+<td>4</td>
+<td>84</td>
+<td>T</td>
+<td>116</td>
+<td>t</td>
+</tr>
+<tr>
+<td>21</td>
+<td>NAK</td>
+<td>53</td>
+<td>5</td>
+<td>85</td>
+<td>U</td>
+<td>117</td>
+<td>u</td>
+</tr>
+<tr>
+<td>22</td>
+<td>SYN</td>
+<td>54</td>
+<td>6</td>
+<td>86</td>
+<td>V</td>
+<td>118</td>
+<td>v</td>
+</tr>
+<tr>
+<td>23</td>
+<td>TB</td>
+<td>55</td>
+<td>7</td>
+<td>87</td>
+<td>W</td>
+<td>119</td>
+<td>w</td>
+</tr>
+<tr>
+<td>24</td>
+<td>CAN</td>
+<td>56</td>
+<td>8</td>
+<td>88</td>
+<td>X</td>
+<td>120</td>
+<td>x</td>
+</tr>
+<tr>
+<td>25</td>
+<td>EM</td>
+<td>57</td>
+<td>9</td>
+<td>89</td>
+<td>Y</td>
+<td>121</td>
+<td>y</td>
+</tr>
+<tr>
+<td>26</td>
+<td>SUB</td>
+<td>58</td>
+<td>:</td>
+<td>90</td>
+<td>Z</td>
+<td>122</td>
+<td>z</td>
+</tr>
+<tr>
+<td>27</td>
+<td>ESC</td>
+<td>59</td>
+<td>;</td>
+<td>91</td>
+<td>[</td>
+<td>123</td>
+<td>{</td>
+</tr>
+<tr>
+<td>28</td>
+<td>FS</td>
+<td>60</td>
+<td>&lt;</td>
+<td>92</td>
+<td>/</td>
+<td>124</td>
+<td>|</td>
+</tr>
+<tr>
+<td>29</td>
+<td>GS</td>
+<td>61</td>
+<td>=</td>
+<td>93</td>
+<td>]</td>
+<td>125</td>
+<td>}</td>
+</tr>
+<tr>
+<td>30</td>
+<td>RS</td>
+<td>62</td>
+<td>&gt;</td>
+<td>94</td>
+<td>^</td>
+<td>126</td>
+<td>`</td>
+</tr>
+<tr>
+<td>31</td>
+<td>US</td>
+<td>63</td>
+<td>?</td>
+<td>95</td>
+<td>_</td>
+<td>127</td>
+<td>DEL</td>
+</tr>
+</tbody></table>
+<p>字符             ASCLL</p>
+<p>“0<del>9”    ==》48</del>57</p>
+<p>“A<del>Z”    ==》65</del>90</p>
+<p>“a<del>z”    ==》97</del>122</p>
+<h2 id="转义符"><a href="#转义符" class="headerlink" title="转义符"></a>转义符</h2><table>
+<thead>
+<tr>
+<th><strong>转义字符</strong></th>
+<th><strong>含义</strong></th>
+<th><strong>ASCII</strong>码值（十进制）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\a</td>
+<td>警报</td>
+<td>007</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>退格(BS) ，将当前位置移到前一列</td>
+<td>008</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>换页(FF)，将当前位置移到下页开头</td>
+<td>012</td>
+</tr>
+<tr>
+<td><strong>\n</strong></td>
+<td><strong>换行(LF) ，将当前位置移到下一行开头</strong></td>
+<td><strong>010</strong></td>
+</tr>
+<tr>
+<td>\r</td>
+<td>回车(CR) ，将当前位置移到本行开头</td>
+<td>013</td>
+</tr>
+<tr>
+<td><strong>\t</strong></td>
+<td><strong>水平制表(HT)  （跳到下一个TAB位置）</strong></td>
+<td><strong>009</strong></td>
+</tr>
+<tr>
+<td>\v</td>
+<td>垂直制表(VT)</td>
+<td>011</td>
+</tr>
+<tr>
+<td>*<em>\\*</em></td>
+<td><strong>代表一个反斜线字符”&quot;</strong></td>
+<td><strong>092</strong></td>
+</tr>
+<tr>
+<td>&#39;</td>
+<td>代表一个单引号（撇号）字符</td>
+<td>039</td>
+</tr>
+<tr>
+<td>&quot;</td>
+<td>代表一个双引号字符</td>
+<td>034</td>
+</tr>
+<tr>
+<td>?</td>
+<td>代表一个问号</td>
+<td>063</td>
+</tr>
+<tr>
+<td>\0</td>
+<td>数字0</td>
+<td>000</td>
+</tr>
+<tr>
+<td>\ddd</td>
+<td>8进制转义字符，d范围0~7</td>
+<td>3位8进制</td>
+</tr>
+<tr>
+<td>\xhh</td>
+<td>16进制转义字符，h范围0<del>9，a</del>f，A~F</td>
+<td>3位16进制</td>
+</tr>
+</tbody></table>
+<h2 id="字符串型"><a href="#字符串型" class="headerlink" title="字符串型"></a>字符串型</h2><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>计算机语言</category>
       </categories>
