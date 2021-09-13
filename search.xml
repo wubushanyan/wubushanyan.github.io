@@ -763,4 +763,47 @@
         <category>告示</category>
       </categories>
   </entry>
+  <entry>
+    <title>回顾《雷神之锤III》平方根倒数算法</title>
+    <url>/2021/08/13/%E3%80%8A%E9%9B%B7%E7%A5%9E%E4%B9%8B%E9%94%A43%E3%80%8B%E5%B9%B3%E6%96%B9%E6%A0%B9%E5%80%92%E6%95%B0%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="关于平方根倒数快速算法"><a href="#关于平方根倒数快速算法" class="headerlink" title="关于平方根倒数快速算法"></a>关于平方根倒数快速算法</h1><p>《雷神之锤III》这款游戏的源码公布后，有人在里面发现了一个好玩的算法，是关于平方根倒数的算法。虽然该算法如今已经过时了，但是其中涉及的浮点数标准和牛顿迭代法还是挺值得一看的。</p>
+<p>该算法一般用于求向量模长等地方，可以说在游戏建模中涉及物理还原这块用到这个平方根倒数还挺多的。</p>
+<p>如果给我一个公式如下：</p>
+<span id="more"></span>
+<p>$$<br>f=\frac{1}{\sqrt{x}}<br>$$<br>我想我可能会写下</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="keyword">float</span> y = <span class="built_in">sqrt</span>(x);</span><br></pre></td></tr></table></figure>
+
+<p>但是在《雷神之锤III》里的算法并不是<code>math.h</code>里的算法。</p>
+<h3 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">float</span> <span class="title">Q_rsqrt</span><span class="params">( <span class="keyword">float</span> number )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">long</span> i;</span><br><span class="line">	<span class="keyword">float</span> x2,y;</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">float</span> threehalfs = <span class="number">1.5F</span>;</span><br><span class="line">    </span><br><span class="line">	×<span class="number">2</span> = number * <span class="number">0.5F</span>;</span><br><span class="line">	y  = number;</span><br><span class="line">	i  = * ( <span class="keyword">long</span> * ) &amp;y;				<span class="comment">// evil floating point bit hack</span></span><br><span class="line">	i  = <span class="number">0x5f3759df</span> - ( i &gt;&gt;<span class="number">1</span> );		<span class="comment">// what the fuck?</span></span><br><span class="line">	y  = * ( <span class="keyword">float</span> * ) &amp;i;</span><br><span class="line">	y  = y * ( threehalfs - ( x2* y *y ) ); <span class="comment">// 1st iteration</span></span><br><span class="line"><span class="comment">// y -y * ( threehalfs - ( x2* y * y ) );   // 2nd iteration, can be removed</span></span><br><span class="line">	<span class="keyword">return</span> y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这个<code>Q_rsqrt</code>函数可以说是越看越怪，其中的<code>0x5f3759df</code>是哪里来的简直一头雾水。</p>
+<h3 id="IEEE754"><a href="#IEEE754" class="headerlink" title="IEEE754"></a>IEEE754</h3><p>首先需要了解浮点数的存储，IEEE二进制浮点数算术标准（<code>IEEE 754</code>），以下为例子，具体请自行了解。</p>
+<p><img src="https://z3.ax1x.com/2021/08/13/fswdzt.png"></p>
+<p>其中第一位0正1负。</p>
+<h3 id="第一步："><a href="#第一步：" class="headerlink" title="第一步："></a>第一步：</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">i  = ( <span class="keyword">long</span> )y;				</span><br></pre></td></tr></table></figure>
+
+<p><strong>将<code>y</code>强制转换为<code>long</code>格式是为了让y能够进行位操作</strong>，<code>float</code>并不能进行位操作。 （long     32bit）</p>
+<p>但是转换会有误差产生，比如y=3.33在经过强制转换为long格式后就会变为3。同时内存小数部分也被打乱。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="number">3.33</span>	<span class="number">0</span>	<span class="number">10000000</span>	<span class="number">10101010001111010111000</span>			<span class="comment">//IEEE 754 </span></span><br><span class="line"><span class="number">3</span>		<span class="number">00000000</span>	<span class="number">00000000</span>	<span class="number">0000000</span>	<span class="number">00000011</span></span><br></pre></td></tr></table></figure>
+
+<p>此时并不能达到要求，即对<code>float</code>格式的y进行位操作，毕竟内存中的位都改变了。</p>
+<p>于是就有了</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">i  = * ( <span class="keyword">long</span> * ) &amp;y;				<span class="comment">// evil floating point bit hack</span></span><br></pre></td></tr></table></figure>
+
+<p><strong><u>这里首先通过<code>&amp;y</code>获得了<code>y</code>的地址，然后通过<code>(long *)</code> 将改地址转换为<code>long</code>格式的地址，最后通过<code>*</code>获取地址内的值返回给i。</u></strong></p>
+<p>此时</p>
+<p>上面这句话就是对第一步的理解，通俗来说就是原来<code>IEEE 754</code>的<code>y</code>的地址值是<code>float</code>格式，但是要保留地址内值不变的情况下告诉<code>CPU</code>这是<code>long</code>格式。</p>
+<h3 id="第二步："><a href="#第二步：" class="headerlink" title="第二步："></a>第二步：</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">i  = <span class="number">0x5f3759df</span> - ( i &gt;&gt;<span class="number">1</span> );		<span class="comment">// what the fuck?</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="第三步："><a href="#第三步：" class="headerlink" title="第三步："></a>第三步：</h3><p>牛顿迭代法<br>$$<br>f(x)=\frac{1}{x^{2}}-x<br>$$</p>
+<p>$$<br>f^{\prime}(x)=\left.f^{\prime}(y)\right|_{y=x}=-\frac{2}{y^{3}}=-\frac{2}{x^{3}}<br>$$</p>
+<p>$$<br>x_{\text {new }}=x-\frac{f(x)}{f^{\prime}(x)}=x-\frac{\frac{1}{x^{2}}-x}{-\frac{2}{x^{3}}}=\frac{3}{2} x-\frac{1}{2} x^{4}<br>$$</p>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>计算机语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
 </search>
